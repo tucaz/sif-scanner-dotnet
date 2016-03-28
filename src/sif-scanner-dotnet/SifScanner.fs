@@ -18,4 +18,4 @@ let breakBy lines pattern =
                 let newGroup = head :: lastGroup;
                 let newList = newGroup :: List.tail acc
                 breakByRec tail pattern newList
-    breakByRec lines pattern [[]]
+    breakByRec lines pattern []
